@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skinnovation</title>
+  
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<style>
+  .section1{background-image:url(Images/4.jpg);background-repeat: no-repeat;}
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+    
+    
+  }
+  .header {
+			top:0;	
+			margin:0px;
+			left: 0px;
+			right: 0px;
+			position: fixed;
+			background-color: #87c1ed;
+			color: white;
+			box-shadow: 0px 8px 4px rgb(103, 193, 205);
+			overflow: hidden;
+			padding-left:20px;
+			font-family: 'Josefin Sans';
+			font-size: 2vw;
+			width: 100%;
+			height:10%;
+			text-align: center;
+		}
+		.topnav {
+  overflow: hidden;
+  background-color: rgb(129, 229, 244);
+}
+
+.topnav-right a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.topnav-right a:hover {
+  background-color: rgb(129, 229, 244);
+  
+  color: black;
+}
+
+.topnav-right a.active {
+  background-color: rgb(129, 229, 244);
+  
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+  padding-right:100px;
+}
+		
+.login{
+margin-top:-70px;
+}
+ 
+  
+  nav {
+    width: 100%;
+    height: 15vh;
+    background: rgba(91, 180, 240, 0.2);
+    box-shadow: 0px 8px 4px rgb(103, 193, 205);
+    color: rgb(26, 23, 23);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  
+  nav .logo {
+    width: 25%;
+    text-align: left;
+    margin-left: 20px;
+    /*background: red;*/
+  }
+  
+  nav .menu {
+    width: auto;
+    display: block;
+    justify-content: space-around;
+  }
+  
+  nav .menu a {
+    width: auto;
+    text-decoration: none;
+    color: rgb(26, 23, 23);
+    font-weight: bold;
+	padding: 10px;
+  }
+  
+  nav .menu a:first-child {
+    color: rgb(26, 23, 23);
+  }
+  nav .menu a:hover{
+    color: rgb(168, 80, 219);
+  }
+  
+  main {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  section h3 {
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+  }
+  
+  section h1 {
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  section p {
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  section a {
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+  }
+  
+  section .btnone {
+    /*background: #00b894;*/
+    background: #fff;
+    color: #000;
+  }
+  
+  .btnone:hover {
+    background: #00b894;
+    color: white;
+  }
+  
+  section .btntwo {
+    background: #00b894;
+    color: white;
+  }
+  
+  .btntwo:hover {
+    background: #fff;
+    color: #000;
+  }
+  .btn_sty{
+  background-color: rgb(135, 231, 8, 0) ;
+  color: white;
+  font-weight: bold;
+  width: 130px;
+  height:50px;
+  border: 1px solid black;
+  border-radius:10px;
+  font-size: 21px;
+  background-color: rgb(135, 231, 8);
+}
+.btn_sty:hover{
+  color: black;
+  
+  box-shadow:0px 0px 60px 20px rgb(135, 231, 8);
+  border: 1px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background:rgb(255,255,255,0.6);
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: 
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #0000;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: rgb(135, 231, 8);
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+  
+</style>
+
+    </head>
+<body>
+<div class="section1">
+<header>
+	
+<nav>
+  <div class="logo"><h1>SKINNOVATION</h1></div>
+	
+	<div class="menu">
+		<a href="index.html" style="font-size: 20">Home</a>
+		<a href="login.html">LOGIN</a>
+		<a href="register.html">REGISTER</a>
+		<a href="prediction.html">PREDICTION</a>
+      
+</div>
+
+
+  
+
+
+   
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="container">
+  <div class="section2">
+  <style>
+  .section2 h1{background-image:url(Images/4.jpg);background-repeat: no-repeat;
+  background-size: cover; text-align: center;}
+  header {
+    width: 100%;
+    height: 100vh;
+  }
+  .card {
+ 
+ width: 90%;
+ padding: 12px;
+ margin-left: 20px;
+ text-align: center;
+ background-color:  rgb(226, 173, 244);
+ transition: 0.3s;
+ border-radius: 10px;
+}
+
+  
+  </style>
+   <h1 > AI-based localization and classification of skin disease with erythema</h1>
+    <h1>About us</h1>
+    <table style="padding:20px">
+      <tr>
+      <td rowspan="2"><img src="images/3.jpg" style="align-items: flex-start; padding: 60px;"></td>
+      <td><h3  style="padding-top: 50px;">Problem:</h4></td>
+      </tr>
+      <tr>
+        <td><p style="text-align:justify; color: rgba(255,255,255,0.3)" class="card">Now a day’s people are suffering from skin diseases, More than 125 million people suffering from Psoriasis also skin cancer rate is rapidly increasing over the last few decades especially Melanoma is most diversifying skin cancer. If skin diseases are not treated at an earlier stage, then it may lead to complications in the body including spreading of the infection from one individual to the other. The skin diseases can be prevented by investigating the infected region at an early stage. The characteristic of the skin images is diversified so that it is a challenging job to devise an efficient and robust algorithm for automatic detection of skin disease and its severity. Skin tone and skin colour play an important role in skin disease detection. Colour and coarseness of skin are visually different. Automatic processing of such images for skin analysis requires quantitative discriminator to differentiate the diseases.</p></td>
+      </td>
+    </tr>
+
+    <tr>
+      <td rowspan="2"><h3  style="padding-top: 50px;">Solution:</h4></h3><br><p style="text-align:justify; color: rgba(255,255,255,0.3)" class="card"> To overcome the above problem we are building a model which is used for the prevention and early detection of skin cancer, psoriasis. Basically, skin disease diagnosis depends on the different characteristics like colour, shape, texture etc. <br>Here the person can capture the images of skin and then the image will be sent the trained model. The model analyses the image and detect whether the person is having skin disease or not.</p></td>
+    </tr>
+    <tr>
+      <td><img src="images/9.jpg" style="align-items: flex-start; padding: 60px;"></td>
+      
+    </tr>
+     
+    </table>
+</section>
+
+
+
+
+
+
+
+
+<section>
+  <div class="section3">
+      <style>
+      .section3{background-image:url(Images/section2.jpg);}
+      header {
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float three columns side by side */
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 10px 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Style the counter cards */
+.card {
+ 
+  width: 90%;
+  padding: 12px;
+  margin-left: 20px;
+  text-align: center;
+  background-color:   rgba(91, 180, 240, 0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.section3 p{
+  font-size: 15px;
+  padding: 10px;
+  
+}
+.section3 h2{
+  padding-top: 10px;
+}
+.row img {
+  padding-left: 0px;
+  border-radius: 10px 10px 10px 10px;
+}
+.row img:hover {
+  box-shadow: 10px 20px 30px 0  rgb(72, 171, 190) ;
+}
+</style>
+<div class="row">
+  <div class="column">
+  <a href="prediction.html">
+    <img src="images/16.jpg" style="width:85%"></a>
+    <div class="card">
+      <h2>Erythema</h2>
+        <p>This website is to find whether the person having erythema or not. Eythema is a kind of skin disease.</p>
+    </div>
+  </div>
+  
+  
+  <div class="column">
+  <a href="Prediction.html" >
+    <img src="images/15.jpg" style="width:85%"></a>
+  <div class="card">
+  <h2>Types Of Erythema </h2>
+    <p>There are more than 10 types of erythema and each has diffrent symptoms and cause. Erythema is a type of skin disease which cause red patches in the skin.</p>
+  </div>
+  </div>
+  
+  <div class="column">
+  <a href="Prediction.html">
+    <img src="images/14.jpg" style="width:85%"></a>
+    <div class="card">
+  <h2>Skin Disease Predicting</h2>
+    <p>Here the User Can find whethere he/she have Erythema and they will also know about what kind of Erythema it is</p>
+  </div>
+  </div>
+</div>
+  </div>
+</section>
+</body>
+</html>
